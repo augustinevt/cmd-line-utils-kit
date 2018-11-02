@@ -1,17 +1,24 @@
 const prompts = require('prompts');
+const fs = require('fs');
+// const questions = require('./questions');
+const questions = require('./questions.json');
 
-const questions = [
-  {
-    type: 'text',
-    name: 'input1',
-    message: 'What in the first input?',
-    validate: (value) => value === 'invalid' ? false : true,
-    initial: 'what is this?',
-  }
-];
+
+const format = (data) => {
+  return JSON.stringify(data);
+};
 
 const main = async () => {
   const results = await prompts(questions);
+
+  const formattedData = format(results);
+
+  fs.writeFile('bank.json', formattedData, 'utf8', (err) => {
+    if (err) {
+      return console.log('choo');
+    }
+  });
+
   console.log(results)
 }
 

@@ -1,0 +1,6 @@
+[{
+  "type": "text",
+  "name": "input1",
+  "message": "Hello",
+  "initial": "what is this?"
+}]
