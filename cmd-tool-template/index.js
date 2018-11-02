@@ -1,13 +1,14 @@
-// const questions = require('./questions');
-// const questions = require('./questions.json');
-const prompts = require('prompts');
-const bank = require('./bank.json');
 const fs = require('fs');
+const inquirer = require('inquirer');
+
+const prompts = inquirer.prompt;
+
+const bank = require('./bank.json');
 const questions = require('./questions.js');
 
 Array.prototype.shuffle = function() {
   let input = this;
-  
+
   input.forEach((item, i) => {
     const randomIndex = Math.floor(Math.random() * (i +1));
 
@@ -21,17 +22,16 @@ Array.prototype.shuffle = function() {
 const format = (data) => {
   return data.shuffle().map((data) => {
     return {
-      type: 'text',
+      type: 'input',
       name: data.prompt,
       message: data.prompt,
-      validate: (value) => value !== data.answer ? false : true,
-      initial: 'what is this?',
+      validate: (value) => value !== data.answer ? "incorrect" : true,
     };
   });
 };
 
 const main = async () => {
-  const  parsedData = format(bank);
+  const parsedData = format(bank);
   const results = prompts(parsedData);
 }
 

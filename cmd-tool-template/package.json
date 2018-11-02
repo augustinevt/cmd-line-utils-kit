@@ -10,7 +10,6 @@
   "author": "october",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.2.0",
-    "prompts": "^1.2.0"
+    "inquirer": "^6.2.0"
   }
 }
