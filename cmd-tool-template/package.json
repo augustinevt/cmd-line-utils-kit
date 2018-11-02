@@ -1,0 +1,15 @@
+{
+  "name": "cmd.line.util.kit",
+  "version": "1.0.0",
+  "description": "Staring point for making quick js command line tools",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "npm run test"
+  },
+  "author": "october",
+  "license": "ISC",
+  "dependencies": {
+    "prompts": "^1.2.0"
+  }
+}
