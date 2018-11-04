@@ -1,1 +1,33 @@
-[{"prompt":"1 x 1","answer":"1"},{"prompt":"1 x 2","answer":"2"},{"prompt":"1 x 3","answer":"3"},{"prompt":"1 x 4","answer":"4"},{"prompt":"1 x 5","answer":"5"},{"prompt":"1 x 6","answer":"6"},{"prompt":"1 x 7","answer":"7"},{"prompt":"1 x 8","answer":"8"},{"prompt":"1 x 9","answer":"9"},{"prompt":"1 x 10","answer":"10"},{"prompt":"1 x 11","answer":"11"},{"prompt":"1 x 12","answer":"12"},{"prompt":"2 x 1","answer":"2"},{"prompt":"2 x 2","answer":"4"},{"prompt":"2 x 3","answer":"6"},{"prompt":"2 x 4","answer":"8"},{"prompt":"2 x 5","answer":"10"},{"prompt":"2 x 6","answer":"12"},{"prompt":"2 x 7","answer":"14"},{"prompt":"2 x 8","answer":"16"},{"prompt":"2 x 9","answer":"18"},{"prompt":"2 x 10","answer":"20"},{"prompt":"2 x 11","answer":"22"},{"prompt":"2 x 12","answer":"24"},{"prompt":"3 x 1","answer":"3"},{"prompt":"3 x 2","answer":"6"},{"prompt":"3 x 3","answer":"9"},{"prompt":"3 x 4","answer":"12"},{"prompt":"3 x 5","answer":"15"},{"prompt":"3 x 6","answer":"18"},{"prompt":"3 x 7","answer":"21"},{"prompt":"3 x 8","answer":"24"},{"prompt":"3 x 9","answer":"27"},{"prompt":"3 x 10","answer":"30"},{"prompt":"3 x 11","answer":"33"},{"prompt":"3 x 12","answer":"36"},{"prompt":"4 x 1","answer":"4"},{"prompt":"4 x 2","answer":"8"},{"prompt":"4 x 3","answer":"12"},{"prompt":"4 x 4","answer":"16"},{"prompt":"4 x 5","answer":"20"},{"prompt":"4 x 6","answer":"24"},{"prompt":"4 x 7","answer":"28"},{"prompt":"4 x 8","answer":"32"},{"prompt":"4 x 9","answer":"36"},{"prompt":"4 x 10","answer":"40"},{"prompt":"4 x 11","answer":"44"},{"prompt":"4 x 12","answer":"48"},{"prompt":"5 x 1","answer":"5"},{"prompt":"5 x 2","answer":"10"},{"prompt":"5 x 3","answer":"15"},{"prompt":"5 x 4","answer":"20"},{"prompt":"5 x 5","answer":"25"},{"prompt":"5 x 6","answer":"30"},{"prompt":"5 x 7","answer":"35"},{"prompt":"5 x 8","answer":"40"},{"prompt":"5 x 9","answer":"45"},{"prompt":"5 x 10","answer":"50"},{"prompt":"5 x 11","answer":"55"},{"prompt":"5 x 12","answer":"60"},{"prompt":"6 x 1","answer":"6"},{"prompt":"6 x 2","answer":"12"},{"prompt":"6 x 3","answer":"18"},{"prompt":"6 x 4","answer":"24"},{"prompt":"6 x 5","answer":"30"},{"prompt":"6 x 6","answer":"36"},{"prompt":"6 x 7","answer":"42"},{"prompt":"6 x 8","answer":"48"},{"prompt":"6 x 9","answer":"54"},{"prompt":"6 x 10","answer":"60"},{"prompt":"6 x 11","answer":"66"},{"prompt":"6 x 12","answer":"72"},{"prompt":"7 x 1","answer":"7"},{"prompt":"7 x 2","answer":"14"},{"prompt":"7 x 3","answer":"21"},{"prompt":"7 x 4","answer":"28"},{"prompt":"7 x 5","answer":"35"},{"prompt":"7 x 6","answer":"42"},{"prompt":"7 x 7","answer":"49"},{"prompt":"7 x 8","answer":"56"},{"prompt":"7 x 9","answer":"63"},{"prompt":"7 x 10","answer":"70"},{"prompt":"7 x 11","answer":"77"},{"prompt":"7 x 12","answer":"84"},{"prompt":"8 x 1","answer":"8"},{"prompt":"8 x 2","answer":"16"},{"prompt":"8 x 3","answer":"24"},{"prompt":"8 x 4","answer":"32"},{"prompt":"8 x 5","answer":"40"},{"prompt":"8 x 6","answer":"48"},{"prompt":"8 x 7","answer":"56"},{"prompt":"8 x 8","answer":"64"},{"prompt":"8 x 9","answer":"72"},{"prompt":"8 x 10","answer":"80"},{"prompt":"8 x 11","answer":"88"},{"prompt":"8 x 12","answer":"96"},{"prompt":"9 x 1","answer":"9"},{"prompt":"9 x 2","answer":"18"},{"prompt":"9 x 3","answer":"27"},{"prompt":"9 x 4","answer":"36"},{"prompt":"9 x 5","answer":"45"},{"prompt":"9 x 6","answer":"54"},{"prompt":"9 x 7","answer":"63"},{"prompt":"9 x 8","answer":"72"},{"prompt":"9 x 9","answer":"81"},{"prompt":"9 x 10","answer":"90"},{"prompt":"9 x 11","answer":"99"},{"prompt":"9 x 12","answer":"108"},{"prompt":"10 x 1","answer":"10"},{"prompt":"10 x 2","answer":"20"},{"prompt":"10 x 3","answer":"30"},{"prompt":"10 x 4","answer":"40"},{"prompt":"10 x 5","answer":"50"},{"prompt":"10 x 6","answer":"60"},{"prompt":"10 x 7","answer":"70"},{"prompt":"10 x 8","answer":"80"},{"prompt":"10 x 9","answer":"90"},{"prompt":"10 x 10","answer":"100"},{"prompt":"10 x 11","answer":"110"},{"prompt":"10 x 12","answer":"120"},{"prompt":"11 x 1","answer":"11"},{"prompt":"11 x 2","answer":"22"},{"prompt":"11 x 3","answer":"33"},{"prompt":"11 x 4","answer":"44"},{"prompt":"11 x 5","answer":"55"},{"prompt":"11 x 6","answer":"66"},{"prompt":"11 x 7","answer":"77"},{"prompt":"11 x 8","answer":"88"},{"prompt":"11 x 9","answer":"99"},{"prompt":"11 x 10","answer":"110"},{"prompt":"11 x 11","answer":"121"},{"prompt":"11 x 12","answer":"132"},{"prompt":"12 x 1","answer":"12"},{"prompt":"12 x 2","answer":"24"},{"prompt":"12 x 3","answer":"36"},{"prompt":"12 x 4","answer":"48"},{"prompt":"12 x 5","answer":"60"},{"prompt":"12 x 6","answer":"72"},{"prompt":"12 x 7","answer":"84"},{"prompt":"12 x 8","answer":"96"},{"prompt":"12 x 9","answer":"108"},{"prompt":"12 x 10","answer":"120"},{"prompt":"12 x 11","answer":"132"},{"prompt":"12 x 12","answer":"144"}]
+{
+  "formulas": {
+    "0": "(a + b)(a - b)",
+    "1": "(a - b)(a^2 + ab + b^2)",
+    "2": "(a + b)(a^2 - ab + b^2)",
+    "3":"(a + b)^2",
+    "4":"(a - b)^2",
+    "5": "the 'AC' method",
+    "6": "the 'AB' method"
+  },
+  "questions": [{
+      "text": "4^2 - 7^2",
+      "formula": "0"
+    },{
+      "text": "4^3 - 7^3",
+      "formula": "1"
+    },{
+      "text": "4^3 + 7^3",
+      "formula": "2"
+    },{
+      "text": "x^2 + 2xy + y^2",
+      "formula": "3"
+    },{
+      "text": "x^2 - 2xy + y^2",
+      "formula": "4"
+    },{
+      "text": "x^2 - 2xy + y^2 when x = 1",
+      "formula": "0"
+    },{
+      "text": "ax^2 - 2xy + y^2 when x !== 1",
+      "formula": "0"
+    }]
+}

@@ -20,12 +20,13 @@ Array.prototype.shuffle = function() {
 }
 
 const format = (data) => {
-  return data.shuffle().map((data) => {
+  return data.questions.shuffle().map((datum) => {
+    console.log(data.formulas[datum.formula])
     return {
       type: 'input',
-      name: data.prompt,
-      message: data.prompt,
-      validate: (value) => value !== data.answer ? "incorrect" : true,
+      name: datum.text,
+      message: datum.text,
+      validate: (value) => value !== data.formulas[datum.formula] ? "incorrect" : true,
     };
   });
 };
