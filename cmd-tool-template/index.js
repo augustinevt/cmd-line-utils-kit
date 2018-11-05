@@ -3,49 +3,69 @@ const inquirer = require('inquirer');
 
 const prompts = inquirer.prompt;
 
-const bank = require('./bank.json');
-const questions = require('./questions.js');
-
-Array.prototype.shuffle = function() {
-  let input = this;
-
-  input.forEach((item, i) => {
-    const randomIndex = Math.floor(Math.random() * (i +1));
-
-    input[randomIndex] = input[i];
-    input[i] = item;
-  });
-
-  return input;
+const flowOptions = {
+  "0": {
+    "message": 'Do you know what I did last summer?',
+    "choices": {
+      "yes": "1",
+      "no": "2",
+    }
+  },
+  "1": {
+    "message": 'Really?',
+    "choices": {
+      "yes": "done",
+      "no": "done",
+    }
+  },
+  "2": {
+    "message": 'Good',
+    "choices": {
+      "cool, I'm going to go now": "3",
+      "no": "done",
+    }
+  },
+  "3": {
+    "message": 'Are you sure you don\'t know anything?',
+    "choices": {
+      "yes": "done",
+      "no": "done",
+    }
+  },
 }
 
-const format = (data) => {
-  return data.questions.shuffle().map((datum) => {
-    console.log(data.formulas[datum.formula])
-    return {
-      type: 'input',
-      name: datum.text,
-      message: datum.text,
-      validate: (value) => value !== data.formulas[datum.formula] ? "incorrect" : true,
-    };
-  });
-};
+const ask = async (name, message="wha?", type='list') => {
+  const path = name.split('/');
+  const flowOption = flowOptions[path[path.length - 1]];
+  const choices = Object.keys(flowOption.choices);
+  const results = await prompts([
+    {
+      type,
+      choices,
+      name,
+      message: flowOption.message,
+    },
+  ]);
+
+  return flowOption.choices[results[name]];
+}
 
 const main = async () => {
-  const parsedData = format(bank);
-  const results = prompts(parsedData);
+  let yosh = true;
+  let path = '0';
+  let question = 'What?';
+  while (yosh) {
+    response = await ask(path, question);
+
+    if (response === 'done') {
+      yosh = false;
+      break;
+    }
+
+    path += "/" + response;
+    question = response;
+    console.log(path, response);
+  }
 }
 
 main();
-
-// const data = [];
-// for( let i = 1; i < 13; i++) {
-//   for( let j = 1; j < 13; j++) {
-//     data.push(
-//       {
-//         prompt: `${i} x ${j}`,
-//         answer: `${i*j}`
-//       }
-//     )
-//   }
-// }
