@@ -1,33 +1,21 @@
 {
   "formulas": {
-    "0": "(a + b)(a - b)",
-    "1": "(a - b)(a^2 + ab + b^2)",
-    "2": "(a + b)(a^2 - ab + b^2)",
-    "3":"(a + b)^2",
-    "4":"(a - b)^2",
-    "5": "the 'AC' method",
-    "6": "the 'AB' method"
+    "0": "TFC / Qs",
+    "1": "ATC - AVC",
+    "2": "AVC + AFC"
   },
-  "questions": [{
-      "text": "4^2 - 7^2",
+  "questions": [
+    {
+      "text": "average fixed cost (1)",
       "formula": "0"
-    },{
-      "text": "4^3 - 7^3",
+    },
+    {
+      "text": "average fixed cost (2)",
       "formula": "1"
-    },{
-      "text": "4^3 + 7^3",
+    },
+    {
+      "text": "Average Total Cost",
       "formula": "2"
-    },{
-      "text": "x^2 + 2xy + y^2",
-      "formula": "3"
-    },{
-      "text": "x^2 - 2xy + y^2",
-      "formula": "4"
-    },{
-      "text": "x^2 - 2xy + y^2 when x = 1",
-      "formula": "0"
-    },{
-      "text": "ax^2 - 2xy + y^2 when x !== 1",
-      "formula": "0"
-    }]
+    }
+    ]
 }
