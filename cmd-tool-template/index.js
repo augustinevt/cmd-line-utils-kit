@@ -3,49 +3,64 @@ const inquirer = require('inquirer');
 
 const prompts = inquirer.prompt;
 
-const bank = require('./bank.json');
-const questions = require('./questions.js');
+// -------------
+//  ELASTICITY OF DEMAND
+// -------------
 
-Array.prototype.shuffle = function() {
-  let input = this;
+const elasticity = async () => {
+  const results = await prompts([
+    {
+      type: 'input',
+      name: 'quantityDemandedOne',
+      message: 'Quantity Demanded One'
+    },
+    {
+      type: 'input',
+      name: 'quantityDemandedTwo',
+      message: 'Quantity Demanded Two'
+    },
+    {
+      type: 'input',
+      name: 'priceOne',
+      message: 'Price One'
+    },
+    {
+      type: 'input',
+      name: 'priceTwo',
+      message: 'Price Two'
+    },
+  ])
 
-  input.forEach((item, i) => {
-    const randomIndex = Math.floor(Math.random() * (i +1));
+  const quantDem1 = parseInt(results.quantityDemandedOne);
+  const quantDem2 = parseInt(results.quantityDemandedTwo);
+  const price1 = parseInt(results.priceOne);
+  const price2 = parseInt(results.priceTwo);
 
-    input[randomIndex] = input[i];
-    input[i] = item;
-  });
+  const changeInQuantity = ((quantDem2 - quantDem1) / (quantDem2 + quantDem1));
+  const changeInPrice = ((price2 - price1) / (price2 + price1));
 
-  return input;
+  const result = Math.abs(changeInQuantity / changeInPrice);
+  const verdict = result > 1 ? 'Elastic' : 'Inelastic';
+
+  console.log(result, verdict);
 }
 
-const format = (data) => {
-  return data.questions.shuffle().map((datum) => {
-
-    return {
-      type: 'input',
-      name: datum.text,
-      message: datum.text,
-      validate: (value) => value !== data.formulas[datum.formula] ? "incorrect" : true,
-    };
-  });
-};
+// -------------
+//  MAIN
+// -------------
 
 const main = async () => {
-  const parsedData = format(bank);
-  const results = prompts(parsedData);
+
+  const results1 = await prompts([{
+    type: 'list',
+    name: 'selectUtil',
+    message: 'Choose Function',
+    choices: ['elasticity', 'test']
+  }]);
+
+  if (results1.selectUtil === 'elasticity') {
+    elasticity();
+  }
 }
 
 main();
-
-// const data = [];
-// for( let i = 1; i < 13; i++) {
-//   for( let j = 1; j < 13; j++) {
-//     data.push(
-//       {
-//         prompt: `${i} x ${j}`,
-//         answer: `${i*j}`
-//       }
-//     )
-//   }
-// }
