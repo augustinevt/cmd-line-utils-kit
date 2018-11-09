@@ -3,45 +3,56 @@ const inquirer = require('inquirer');
 
 const prompts = inquirer.prompt;
 
-const flowOptions = {
+const possesivePronouns = {
+  "mein": {
+    "f": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "m": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "n": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+  "dein": {
+    "f": {
+      "dative": "deiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "m": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "n": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    }
+  }
+}
+
+const nomitive = {
   "0": {
-    "message": 'Do you know what I did last summer?',
-    "choices": {
-      "yes": "1",
-      "no": "2",
-    }
-  },
-  "1": {
-    "message": 'Really?',
-    "choices": {
-      "yes": "done",
-      "no": "done",
-    }
-  },
-  "2": {
-    "message": 'Good',
-    "choices": {
-      "cool, I'm going to go now": "3",
-      "no": "done",
-    }
-  },
-  "3": {
-    "message": 'Are you sure you don\'t know anything?',
-    "choices": {
-      "yes": "done",
-      "no": "done",
+    "message": 'Do you know what I did last summer?'
     }
   },
 }
 
-const ask = async (name, message="wha?", type='list') => {
+const ask = async (name, message="wha?", type='input') => {
   const path = name.split('/');
   const flowOption = flowOptions[path[path.length - 1]];
   const choices = Object.keys(flowOption.choices);
   const results = await prompts([
     {
       type,
-      choices,
       name,
       message: flowOption.message,
     },
