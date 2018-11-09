@@ -1,33 +1,259 @@
 {
-  "formulas": {
-    "0": "(a + b)(a - b)",
-    "1": "(a - b)(a^2 + ab + b^2)",
-    "2": "(a + b)(a^2 - ab + b^2)",
-    "3":"(a + b)^2",
-    "4":"(a - b)^2",
-    "5": "the 'AC' method",
-    "6": "the 'AB' method"
+  "mein": {
+    "feminine": {
+      "nominative": "meine",
+      "akkusative": "meine",
+      "dative": "meiner"
+    },
+    "masculine": {
+      "nominative": "meiner",
+      "akkusative": "meinen",
+      "dative": "meinem"
+    },
+    "neuter": {
+      "nominative": "meins",
+      "akkusative": "meins",
+      "dative": "meinem"
+    },
+    "plural": {
+      "nominative": "meine",
+      "akkusative": "meine",
+      "dative": "meinen"
+    }
   },
-  "questions": [{
-      "text": "4^2 - 7^2",
-      "formula": "0"
-    },{
-      "text": "4^3 - 7^3",
-      "formula": "1"
-    },{
-      "text": "4^3 + 7^3",
-      "formula": "2"
-    },{
-      "text": "x^2 + 2xy + y^2",
-      "formula": "3"
-    },{
-      "text": "x^2 - 2xy + y^2",
-      "formula": "4"
-    },{
-      "text": "x^2 - 2xy + y^2 when x = 1",
-      "formula": "0"
-    },{
-      "text": "ax^2 - 2xy + y^2 when x !== 1",
-      "formula": "0"
-    }]
+
+
+
+
+  "dein": {
+    "feminine": {
+      "nominative": "deine",
+      "akkusative": "deine",
+      "dative": "deiner"
+    },
+    "masculine": {
+      "nominative": "deiner",
+      "akkusative": "deinen",
+      "dative": "deinem"
+    },
+    "neuter": {
+      "nominative": "deins",
+      "akkusative": "deins",
+      "dative": "deinem"
+    },
+    "plural": {
+      "nominative": "meine",
+      "akkusative": "meinen",
+      "dative": "meiner"
+    }
+  },
+
+
+
+
+  "sein(m)": {
+    "feminine": {
+      "nominative": "seine",
+      "akkusative": "seine",
+      "dative": "seiner"
+    },
+    "masculine": {
+      "nominative": "seiner",
+      "akkusative": "seinen",
+      "dative": "seinem"
+    },
+    "neuter": {
+      "nominative": "siens",
+      "akkusative": "seins",
+      "dative": "seinem"
+    },
+    "plural": {
+      "nominative": "seine",
+      "akkusative": "seine",
+      "dative": "seinen"
+    }
+  },
+
+
+
+
+
+  "ihr(s)": {
+    "feminine": {
+      "dative": "deiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "masculine": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "neuter": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "plural": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    }
+  },
+
+
+
+
+  "sein(n)": {
+    "feminine": {
+      "nominative": "seine",
+      "akkusative": "seine",
+      "dative": "seiner"
+    },
+    "masculine": {
+      "nominative": "seiner",
+      "akkusative": "seinen",
+      "dative": "seinem"
+    },
+    "neuter": {
+      "nominative": "siens",
+      "akkusative": "seins",
+      "dative": "seinem"
+    },
+    "plural": {
+      "nominative": "seine",
+      "akkusative": "seine",
+      "dative": "seinen"
+    }
+  },
+
+
+
+
+  "sein(n)": {
+    "feminine": {
+      "dative": "deiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "masculine": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "neuter": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "plural": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    }
+  },
+
+
+
+
+  "euer": {
+    "feminine": {
+      "dative": "deiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "masculine": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "neuter": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "plural": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    }
+  },
+
+
+
+
+  "unser": {
+    "feminine": {
+      "dative": "deiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "masculine": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "neuter": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "plural": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    }
+  },
+
+
+
+
+  "ihr(p)": {
+    "feminine": {
+      "dative": "deiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "masculine": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "neuter": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "plural": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    }
+  },
+
+
+
+
+  "Ihr": {
+    "feminine": {
+      "dative": "deiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "masculine": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "neuter": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    },
+    "plural": {
+      "dative": "meiner",
+      "nominative": "meine",
+      "akkusative": "meinen"
+    }
+  }
 }
