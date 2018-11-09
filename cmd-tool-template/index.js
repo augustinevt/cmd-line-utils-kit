@@ -21,7 +21,7 @@ Array.prototype.shuffle = function() {
 
 const format = (data) => {
   return data.questions.shuffle().map((datum) => {
-    console.log(data.formulas[datum.formula])
+    // console.log(data.formulas[datum.formula])
     return {
       type: 'input',
       name: datum.text,

@@ -9,25 +9,7 @@
     "6": "the 'AB' method"
   },
   "questions": [{
-      "text": "4^2 - 7^2",
-      "formula": "0"
-    },{
-      "text": "4^3 - 7^3",
-      "formula": "1"
-    },{
-      "text": "4^3 + 7^3",
-      "formula": "2"
-    },{
-      "text": "x^2 + 2xy + y^2",
-      "formula": "3"
-    },{
-      "text": "x^2 - 2xy + y^2",
-      "formula": "4"
-    },{
-      "text": "x^2 - 2xy + y^2 when x = 1",
-      "formula": "0"
-    },{
-      "text": "ax^2 - 2xy + y^2 when x !== 1",
+      "text": "Difference between two squares",
       "formula": "0"
     }]
 }
