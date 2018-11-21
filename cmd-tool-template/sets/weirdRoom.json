@@ -1,0 +1,35 @@
+{
+
+  "0": {
+    "message": "Go for a run?",
+    "choices": {
+      "yes": "1",
+      "no": "2"
+    }
+  },
+
+  "1": {
+    "message": "Really?",
+    "choices": {
+      "yes": "done",
+      "no": "done"
+    }
+  },
+
+  "2": {
+    "message": "Good",
+    "choices": {
+      "cool, I'm going to go now": "3",
+      "no": "done"
+    }
+  },
+
+  "3": {
+    "message": "Are you sure you don\"t know anything?",
+    "choices": {
+      "yes": "done",
+      "no": "done"
+    }
+  }
+
+}
