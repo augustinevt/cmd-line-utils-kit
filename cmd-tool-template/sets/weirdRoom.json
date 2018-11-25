@@ -1,5 +1,6 @@
 {
-
+  "isDirectory": false,
+  "type": "default",
   "0": {
     "message": "Go for a run?",
     "choices": {

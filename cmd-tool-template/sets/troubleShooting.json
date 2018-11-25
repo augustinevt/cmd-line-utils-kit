@@ -1,0 +1,49 @@
+{
+  "isDirectory": false,
+  "type": "output",
+  "0": {
+    "id": "0",
+    "message": "Question inputs?",
+    "links": {
+      "default": "1"
+    },
+    "choices": {
+      "ok": "1"
+    }
+  },
+
+  "1": {
+    "id": "1",
+    "message": "question methods?",
+    "links": {
+      "default": "2"
+    },
+    "choices": {
+      "ok": "2"
+    }
+  },
+
+  "2": {
+    "id": "2",
+    "message": "Question question",
+    "links": {
+      "default": "3"
+    },
+    "choices": {
+      "ok": "3"
+
+    }
+  },
+
+  "3": {
+    "id": "3",
+    "message": "That's it!",
+    "type": "list",
+    "links": {
+      "default": "done"
+    },
+    "choices": {
+      "ok": "done"
+    }
+  }
+}
